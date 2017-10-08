@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Respec</title>
+
+<div>Regular</div>
+<div class="class">CLASS</div>
+<div id="id" class="class">ID</div>
+
+<script src=../respec.js></script>
+
+<script>
+  window.addEventListener('load', JSinCSS)
+  window.addEventListener('resize', JSinCSS)
+  window.addEventListener('input', JSinCSS)
+  window.addEventListener('click', JSinCSS)
+
+  function JSinCSS() {
+
+    var tag = document.querySelector('#JSinCSS')
+
+    if (!tag) {
+
+      tag = document.createElement('style')
+      tag.id = 'JSinCSS'
+      document.head.appendChild(tag)
+
+    }
+
+    tag.innerHTML = `
+
+      div {
+        border: 1px solid;
+        padding: 1em;
+        margin: 1em;
+      }
+
+      ${respec('div', 3, ` /* <- change the number here */
+        background: lime;
+      `)}
+
+      ${respec('div.class', 2, ` /* <- change the number here */
+        background: pink;
+      `)}
+
+      ${respec('div.class#id', 1, ` /* <- change the number here */
+        background: purple;
+      `)}
+
+    `
+
+  }
+</script>
