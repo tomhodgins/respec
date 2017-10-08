@@ -6,6 +6,8 @@ Respec allows CSS authors to assign a specificity level to the rules they write 
 
 > Inspired by [https://github.com/w3c/csswg-drafts/issues/1170](https://github.com/w3c/csswg-drafts/issues/1170)
 
+![](https://i.imgur.com/UX6hHUj.gif)
+
 ### Syntax
 
 ```javascript
