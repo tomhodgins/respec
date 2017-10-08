@@ -24,4 +24,4 @@ respec('div', 3, 'background: lime;')
 
 ### Website
 
-- https://github.com/tomhodgins/respec/
+- https://tomhodgins.github.io/respec/
