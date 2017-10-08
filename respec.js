@@ -17,7 +17,7 @@ Respec allows CSS authors to assign a specificity level to the rules they write 
 
     respec('div', 3, 'background: lime;')
 
-## Info
+### Info
 
 - website: https://github.com/tomhodgins/respec
 - author: Tommy Hodgins
